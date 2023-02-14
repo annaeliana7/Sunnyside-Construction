@@ -1,5 +1,6 @@
 :root {
   --yellow-color: #eec128;
+  --light-yellow: #eec02868;
   --dark-yellow-color: #a69456;
   --grey-color: #d3d3d3;
   --white-color: #fff;
@@ -42,7 +43,7 @@ body {
 .nav-mobile {
   width: 100%;
   height: 100vh;
-  background-color: rgb(196, 180, 212);
+  background-color: var(--light-yellow);
   position: fixed;
   top: 0;
   left: 0;
@@ -107,30 +108,12 @@ body {
   object-fit: cover;
 }
 
-.main-nav .icon-menu-mobile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
 .bottom-nav {
   list-style-type: none;
   display: none;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-}
-
-.bottom-nav li {
-  color: var(--black-color);
-}
-
-.bottom-nav button {
-  padding: 8px;
-  background-color: transparent;
-  border: 5px solid var(--red-color);
-  color: var(--red-color);
 }
 
 /* footer */
@@ -141,7 +124,7 @@ body {
   width: 100%;
   bottom: 0;
   left: 0;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   padding-top: 15px;
   align-items: center;
 }
@@ -156,6 +139,7 @@ body {
   text-transform: capitalize;
   padding-top: 15px;
   padding-right: 15px;
+  padding-left: 10px;
   color: var(--black-color);
 }
 
