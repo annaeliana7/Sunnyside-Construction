@@ -128,7 +128,6 @@ body {
   color: var(--red-color);
 }
 
-
 /* desktop version */
 @media all and (min-width: 768px) {
   /* home page  */
@@ -146,3 +145,4 @@ body {
   .nav-mobile {
     display: none !important;
   }
+}
