@@ -43,7 +43,7 @@ body {
 .nav-mobile {
   width: 100%;
   height: 100vh;
-  background-color: var( --light-yellow);
+  background-color: var(--light-yellow);
   position: fixed;
   top: 0;
   left: 0;
@@ -174,3 +174,4 @@ body {
       display: none;
     }
   }
+}
