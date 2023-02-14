@@ -124,7 +124,7 @@ body {
   width: 100%;
   bottom: 0;
   left: 0;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   padding-top: 15px;
   align-items: center;
 }
@@ -139,6 +139,7 @@ body {
   text-transform: capitalize;
   padding-top: 15px;
   padding-right: 15px;
+  padding-left: 10px;
   color: var(--black-color);
 }
 
