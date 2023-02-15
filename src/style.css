@@ -1,10 +1,12 @@
 :root {
   --yellow-color: #eec128;
-  --light-yellow: #eec02868;
+  --light-yellow: #eec028;
   --dark-yellow-color: #a69456;
+  --banana-yellow: #ffe599;
   --grey-color: #d3d3d3;
+  --grey-white-color: #dad9d9;
   --white-color: #fff;
-  --black-color: #272a31;
+  --black-color: #273a33;
   --dark-grey-color: #707070;
   --grey-tone-color: #adadad;
 }
@@ -43,7 +45,7 @@ body {
 .nav-mobile {
   width: 100%;
   height: 100vh;
-  background-color: var(--light-yellow);
+  background-color: #ffe599;
   position: fixed;
   top: 0;
   left: 0;
@@ -116,9 +118,51 @@ body {
   gap: 50px;
 }
 
+/* headline */
+#headline {
+  width: 100%;
+  padding: 25px 0;
+}
+
+.headline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: #273a33;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.headline-title {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.headline-subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #eec028;
+}
+
+.headline-description {
+  padding: 16px;
+  border: 2px solid #eec028;
+  color: #273a33;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 16px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
 /* footer */
 #footer {
-  position: fixed;
   display: none;
   justify-content: center;
   width: 100%;
@@ -159,6 +203,15 @@ body {
 
   .nav-mobile {
     display: none !important;
+  }
+
+  /* headline */
+  #headline {
+    padding: 60px 0;
+  }
+
+  .headline-title {
+    font-size: 3.5rem;
   }
 
   /* footer */
