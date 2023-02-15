@@ -162,7 +162,6 @@ body {
 
 /* footer */
 #footer {
-  position: fixed;
   display: none;
   justify-content: center;
   width: 100%;
