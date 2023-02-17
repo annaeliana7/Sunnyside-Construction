@@ -1,4 +1,4 @@
-import './style.css';
+// import './style.css';
 
 // popup menu
 const hamburgerBtn = document.querySelector('.icon-menu-mobile img');
