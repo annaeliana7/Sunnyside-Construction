@@ -110,6 +110,20 @@ body {
   object-fit: cover;
 }
 
+/* move mobile menu to the right */
+.icon-menu-mobile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+/* change color of menu */
+.icon-menu-mobile img {
+filter: invert(90%) sepia(71%) saturate(2951%) hue-rotate(333deg) brightness(97%) contrast(91%);
+height: 66%;
+object-fit: cover;
+}
+
 .bottom-nav {
   list-style-type: none;
   display: none;
