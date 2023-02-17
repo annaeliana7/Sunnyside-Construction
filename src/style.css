@@ -111,28 +111,24 @@ body {
 .bottom-nav a::after {
   content: '';
   width: 100%;
-  transform-origin: bottom;
-  /* modify transform origin to start from right */
+  transform-origin: bottom; /* modify transform origin to start from right */
   transform: scaleX(0);
   transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   background-color: #eec028;
   height: 3px;
   bottom: 1px;
-  right: 0;
-  /* modify left to right */
+  right: 0; /* modify left to right */
   position: absolute;
 }
 
 .bottom-nav a:hover::before,
 .bottom-nav a:hover::after {
-  transform-origin: bottom left;
-  /* modify transform origin to move to left */
+  transform-origin: bottom left; /* modify transform origin to move to left */
   transform: scaleX(1);
 }
 
 .bottom-nav a:hover::after {
-  transition-delay: 0.2s;
-  /* add delay to start animation after :before */
+  transition-delay: 0.2s; /* add delay to start animation after :before */
 }
 
 /* end animations */
@@ -331,7 +327,7 @@ body {
     display: none !important;
   }
 
-  /* banner */
+    /* banner */
   .banner h2 {
     font-size: 5em;
   }
@@ -350,7 +346,7 @@ body {
     background-size: cover;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.103);
   }
-
+  
   /* headline */
   #headline {
     padding: 60px 0;
