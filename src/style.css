@@ -327,7 +327,7 @@ body {
     display: none !important;
   }
 
-    /* banner */
+  /* banner */
   .banner h2 {
     font-size: 5em;
   }
@@ -346,7 +346,7 @@ body {
     background-size: cover;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.103);
   }
-  
+
   /* headline */
   #headline {
     padding: 60px 0;
