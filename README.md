@@ -39,30 +39,43 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 NAME OF PROJECT<a name="about-project"></a>
+# 📖 Sunnyside Construction<a name="about-project"></a>
 
-**Name of Project** is a project ...complete sentence
+**Sunnyside Construction** 
+<br>
+
+Sunnyside Construction repository is a professional business website developed using HTML5, CSS3, and JavaScript. The use of linters and Webpack ensured consistent code quality and efficient deployment. The Kanban board facilitated effective organization of the project, and Visual Studio Code and GitHub were used as primary tools.
+
+<br>
+
+## 🏆 Kanban Template
+
+This project was developed using a Kanban board approach. The Kanban board used during the development of this project can be accessed here: [Kanban Board Link](https://github.com/users/annaeliana7/projects/7)
 
 <br>
 
 ## 🛠 Built With <a name="built-with"></a>
+
     HTML
     CSS
-    Javascript (ES6)
+    Javascript
     Webpack
     Linters
+    Kanban Board
+    Visual Studio Code
+    GitHub
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Demo Image
 <br>
-<img align="center" src="assets-README/project_demo.png" alt="logo" width="100%"  height="auto" />
+<img align="center" src="assets-README/project_demo_3.png" alt="logo" width="100%"  height="auto" />
 
   <br/>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Name of Project](https://ADD LINK.git)
+[Sunnyside Construction](https://annaeliana7.github.io/Sunnyside-Construction/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,9 +86,9 @@
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone `https://github.com/annaeliana7/ADD LINK.git`
+- On the terminal run this command git clone `https://github.com/annaeliana7/Sunnyside-Construction.git`
 
-- Go to the repository folder using command prompt cd `NAME OF PROJECT`
+- Go to the repository folder using command prompt cd `Sunnyside-Construction`
 
 - Install the dev dependencies for linters run npm install.
 
@@ -96,9 +109,9 @@ Clone this repository to your desired folder:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://ADD LINK.git
+- On the terminal run this command git clone https://github.com/annaeliana7/Sunnyside-Construction.git
 
-- Go to the repository folder using command prompt cd NAME-OF-FILE
+- Go to the repository folder using command prompt cd Sunnyside-Construction
 
 - Install the dev dependencies for linters run npm install.
 --->
@@ -130,7 +143,7 @@ Anna Petras
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://ADD LINK.git).
+Feel free to check the [issues page](https://github.com/annaeliana7/Sunnyside-Construction/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
