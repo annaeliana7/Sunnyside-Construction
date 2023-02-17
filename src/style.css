@@ -80,6 +80,12 @@ body {
   padding-right: 100px;
 }
 
+/* mobile menu hover */
+
+.nav-mobile ul li a:hover {
+  color: white;
+}
+
 /* ===============================*\
         Transitions/Animations
 *\=============================== */
