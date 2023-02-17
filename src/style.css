@@ -77,9 +77,59 @@ body {
   padding-right: 100px;
 }
 
+/* ===============================*\
+        Transitions/Animations
+*\=============================== */
+
+/* Adds a hover effect to a link by animating a line that starts from the bottom center of the link and moves towards both the left and right edges */
+.bottom-nav a {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.bottom-nav a::before,
+.bottom-nav a::after {
+  content: '';
+  width: 100%;
+  transform-origin: bottom; /* modify transform origin to start from right */
+  transform: scaleX(0);
+  transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  background-color: #eec028;
+  height: 3px;
+  bottom: 1px;
+  right: 0; /* modify left to right */
+  position: absolute;
+}
+
+.bottom-nav a:hover::before,
+.bottom-nav a:hover::after {
+  transform-origin: bottom left; /* modify transform origin to move to left */
+  transform: scaleX(1);
+}
+
+.bottom-nav a:hover::after {
+  transition-delay: 0.2s; /* add delay to start animation after :before */
+}
+
+/* ===============================*\
+      End Transitions/Animations
+*\=============================== */
+
 .bottom-nav li a {
   color: var(--black-color);
   text-decoration: none;
+}
+
+/* ===============================*\
+        Transitions/Animations
+*\=============================== */
+
+/* transition- increase font size and change color on hover */
+.bottom-nav a:hover {
+  color: #707070;
+  cursor: pointer;
+  transform: scale(1.15);
+  font-size: 1.3em;
 }
 
 .nav-mobile .container li a {
@@ -105,6 +155,13 @@ body {
   display: none;
 }
 
+/* change color of menu */
+.icon-menu-mobile img {
+  filter: invert(90%) sepia(71%) saturate(2951%) hue-rotate(333deg) brightness(97%) contrast(91%);
+  height: 66%;
+  object-fit: cover;
+}
+
 .main-nav .icon-nav img {
   height: 100%;
   object-fit: cover;
@@ -117,12 +174,6 @@ body {
   align-items: center;
   width: 100%;
 }
-/* change color of menu */
-.icon-menu-mobile img {
-filter: invert(90%) sepia(71%) saturate(2951%) hue-rotate(333deg) brightness(97%) contrast(91%);
-height: 66%;
-object-fit: cover;
-}
 
 .bottom-nav {
   list-style-type: none;
@@ -131,52 +182,6 @@ object-fit: cover;
   align-items: center;
   gap: 50px;
 }
-
-  /* ===============================*\
-        Transitions/Animations
-*\=============================== */
-
-  /* transition- increase font size and change color on hover */
-  .bottom-nav a:hover {
-    color: #707070;
-    cursor: pointer;
-    transform: scale(1.15);
-    font-size: 1.3em;
-  }
-
-/* Adds a hover effect to a link by animating a line that starts from the bottom center of the link and moves towards both the left and right edges */
-.bottom-nav a {
-  position: relative;
-  padding-bottom: 5px;
-}
-
-.bottom-nav a:before,
-.bottom-nav a:after {
-  content: '';
-  width: 100%;
-  transform-origin: bottom; /* modify transform origin to start from right */
-  transform: scaleX(0);
-  transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  background-color: #eec028;
-  height: 3px;
-  bottom: 1px;
-  right: 0; /* modify left to right */
-  position: absolute;
-}
-
-.bottom-nav a:hover:before,
-.bottom-nav a:hover:after {
-  transform-origin: bottom left; /* modify transform origin to move to left */
-  transform: scaleX(1);
-}
-
-.bottom-nav a:hover:after {
-  transition-delay: 0.2s; /* add delay to start animation after :before */
-}
-
-  /* ===============================*\
-      End Transitions/Animations
-*\=============================== */
 
 /* headline */
 #headline {
