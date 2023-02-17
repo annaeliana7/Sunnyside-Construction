@@ -45,7 +45,7 @@ body {
 .nav-mobile {
   width: 100%;
   height: 100vh;
-  background-color: #ffe599;
+  background-color: #707070;
   position: fixed;
   top: 0;
   left: 0;
@@ -57,12 +57,32 @@ body {
   z-index: 100;
 }
 
-.nav-mobile .cross {
+.footer-logo img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* change color of menu icon */
+.icon-menu-mobile img {
+  filter: invert(90%) sepia(71%) saturate(2951%) hue-rotate(333deg) brightness(97%) contrast(91%);
+  height: 66%;
+  object-fit: cover;
+}
+
+.main-nav .icon-nav img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-mobile .cross img {
   position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 50px;
+  right: 40px;
+  top: 40px;
+  width: 30px;
+  height: auto;
   cursor: pointer;
+  object-fit: cover;
+  filter: invert(82%) sepia(68%) saturate(632%) hue-rotate(337deg) brightness(98%) contrast(91%);
 }
 
 .nav-mobile .container {
@@ -111,9 +131,7 @@ body {
   transition-delay: 0.2s; /* add delay to start animation after :before */
 }
 
-/* ===============================*\
-      End Transitions/Animations
-*\=============================== */
+/* end animations */
 
 .bottom-nav li a {
   color: var(--black-color);
@@ -134,8 +152,15 @@ body {
 
 .nav-mobile .container li a {
   text-decoration: none;
-  color: var(--black-color);
+  color: #eec028;
   font-size: 2em;
+}
+
+/* end animation */
+
+/* mobile menu hover */
+.nav-mobile ul li a:hover {
+  color: white;
 }
 
 .main-nav {
@@ -145,26 +170,9 @@ body {
   margin-top: 25px;
 }
 
-.footer-logo img {
-  width: 100%;
-  border-radius: 20px;
-}
-
 .main-nav .icon-nav {
   height: 72px;
   display: none;
-}
-
-/* change color of menu */
-.icon-menu-mobile img {
-  filter: invert(90%) sepia(71%) saturate(2951%) hue-rotate(333deg) brightness(97%) contrast(91%);
-  height: 66%;
-  object-fit: cover;
-}
-
-.main-nav .icon-nav img {
-  height: 100%;
-  object-fit: cover;
 }
 
 /* move mobile menu to the right */
