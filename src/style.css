@@ -242,34 +242,26 @@ body {
 
 /* headline */
 #headline {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
   width: 100%;
-  padding: 25px 0;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.525), rgba(255, 255, 255, 0.5)), url('images/backdrop-headline.jpg');
 }
 
 .headline-content {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
   color: #273a33;
-  align-items: center;
-  padding-bottom: 15px;
+  max-width: 100%;
+  text-align: center;
 }
 
 .headline-title {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.7rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin: 0;
-}
-
-.headline-subtitle {
-  font-size: 1.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 0;
-  color: #eec028;
 }
 
 .headline-description {
@@ -278,9 +270,23 @@ body {
   color: #273a33;
   text-align: center;
   max-width: 100%;
-  margin: 0 16px;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-top: 25px;
+}
+
+.headline-description p {
+  line-height: 1.5;
+}
+
+.headline-image {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.build {
+  max-width: 100%;
 }
 
 /* footer */
@@ -291,7 +297,7 @@ body {
   bottom: 0;
   left: 0;
   padding-bottom: 25px;
-  padding-top: 15px;
+  padding-top: 25px;
   align-items: center;
 }
 
@@ -349,11 +355,56 @@ body {
 
   /* headline */
   #headline {
-    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .headline-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+
+  /* transition- increase font size and change color on hover */
+  .headline-title:hover {
+    color: #eec028;
+    cursor: pointer;
+    transform: scale(1.05);
+    font-size: 3rem;
+  }
+
+  .headline-description {
+    font-size: 1.3rem;
+  }
+
+  .build {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 5px;
+    border: #eec028;
+    cursor: pointer;
+  }
+
+  /* transition */
+
+  /* transition from left to center */
+  .wrapper.headline-content,
+  .headline-image {
+    animation: slideLeftRight 2s;
+    animation-delay: 0s, 0.5s;
+  }
+
+  @keyframes slideLeftRight {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* image transition */
+  .build:hover {
+    transform: scale(1.05);
   }
 
   /* footer */
