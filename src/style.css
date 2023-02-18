@@ -248,7 +248,7 @@ body {
   width: 100%;
   padding-top: 38px;
   padding-bottom: 38px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.525), rgba(255, 255, 255 , 0.5)), url('images/backdrop-headline.jpg');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.525), rgba(255, 255, 255, 0.5)), url('images/backdrop-headline.jpg');
 }
 
 .headline-content {
@@ -357,58 +357,55 @@ body {
   #headline {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 35px;
   }
-  
-    .headline-title {
-      font-size: 3rem;
-    }
-  
-    /* transition- increase font size and change color on hover */
+
+  .headline-title {
+    font-size: 3rem;
+  }
+
+  /* transition- increase font size and change color on hover */
   .headline-title:hover {
     color: #eec028;
     cursor: pointer;
     transform: scale(1.05);
     font-size: 3rem;
   }
-    .headline-description {
-      font-size: 1.3rem;
+
+  .headline-description {
+    font-size: 1.3rem;
+  }
+
+  .build {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 5px;
+    border: #eec028;
+    cursor: pointer;
+  }
+
+  /* transition */
+
+  /* transition from left to center */
+  .wrapper.headline-content,
+  .headline-image {
+    animation: slideLeftRight 2s;
+    animation-delay: 0s, 0.5s;
+  }
+
+  @keyframes slideLeftRight {
+    0% {
+      transform: translateX(-100%);
     }
-  
-    .build {
-      width: 100%;
-      max-width: 750px;
-      border-radius: 5px;
+
+    100% {
+      transform: translateX(0);
     }
-  
-    /* transition */
-    /* transition from left to center */
-    .wrapper.headline-content,
-    .headline-image {
-      animation: slideLeftRight 2s;
-      animation-delay: 0s, 0.5s;
-    }
-    
-    @keyframes slideLeftRight {
-      0% {
-        transform: translateX(-100%);
-      }
-    
-      100% {
-        transform: translateX(0);
-      }
-    }  
-  
-    /* image transition */
-    .build {
-      width: 100%;
-      cursor: pointer;
-      border:#eec028;
-    }
-  
-    .build:hover {
-      transform: scale(1.05);
-    }
+  }
+
+  /* image transition */
+  .build:hover {
+    transform: scale(1.05);
+  }
 
   /* footer */
   #footer {
