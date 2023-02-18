@@ -64,7 +64,7 @@ body {
 
 /* change color of menu icon */
 .icon-menu-mobile img {
-  filter: invert(90%) sepia(71%) saturate(2951%) hue-rotate(333deg) brightness(97%) contrast(91%);
+  filter: invert(66%) sepia(0%) saturate(0%) hue-rotate(333deg) brightness(66%) contrast(66%);
   height: 66%;
   object-fit: cover;
 }
