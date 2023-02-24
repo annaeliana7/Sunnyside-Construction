@@ -177,6 +177,7 @@ For Webkit browsers (Safari, Chrome, etc.)*/
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
+  padding-bottom: 15px;
 }
 
 .main-nav .icon-nav {
@@ -200,16 +201,17 @@ For Webkit browsers (Safari, Chrome, etc.)*/
   gap: 50px;
 }
 
+/* ******* Banner Section ******* */
+
 /* banner */
 .banner {
-  margin-top: 15px;
-  padding: 6em 0 8em 0;
+  padding: 3em 0 3em 0;
   text-align: center;
   width: 100%;
-  background-image: url(images/drawing-construction-mobile.jpg);
+  background-image: linear-gradient(rgba(116, 128, 128, 0.257), rgba(116, 128, 128, 0.257)), url('images/white\ apt\ buildings.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.103);
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.2);
 }
 
 .border {
@@ -225,10 +227,10 @@ For Webkit browsers (Safari, Chrome, etc.)*/
   font-size: 1.5em;
   color: #eec028;
   text-align: center;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  padding: 0.5em 0 0 0;
+  padding: 0.5em 5px 0 20px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -240,13 +242,49 @@ For Webkit browsers (Safari, Chrome, etc.)*/
   margin: 1em 0 0 0;
   line-height: 2em;
   letter-spacing: 2px;
-  padding: 0 0 2em 0;
+  padding: 0 16px 0 16px;
   font-family: 'Open Sans', sans-serif;
 }
 
 .border-bottom {
   border-top: 0;
   border-bottom: 2px solid #eec028;
+}
+
+/* desktop version */
+@media all and (min-width: 768px) {
+  /* banner */
+  .banner h2 {
+    font-size: 5.5em;
+    font-weight: 300;
+  }
+
+  .banner p {
+    font-size: 3em;
+  }
+
+  .banner {
+    padding: 5em 0 5em 0;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(116, 128, 128, 0.257), rgba(116, 128, 128, 0.257)), url('images/white\ apt\ buildings.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.2);
+  }
+
+  .border {
+    width: 60%;
+    margin: 0 auto;
+    height: 47px;
+    border: 3px solid #eec028;
+    border-bottom: 0;
+  }
+
+  .border-bottom {
+    border-top: 0;
+    border-bottom: 3px solid #eec028;
+  }
 }
 
 /* headline */
@@ -344,7 +382,8 @@ For Webkit browsers (Safari, Chrome, etc.)*/
 
   /* banner */
   .banner h2 {
-    font-size: 5em;
+    font-size: 5.5em;
+    font-weight: 300;
   }
 
   .banner p {
@@ -352,15 +391,28 @@ For Webkit browsers (Safari, Chrome, etc.)*/
   }
 
   .banner {
-    margin-top: 15px;
-    padding: 6em 0 8em 0;
+    padding: 5em 0 5em 0;
     text-align: center;
     width: 100%;
-    background-image: url(images/drawing-construction.jpg);
+    background-image: linear-gradient(rgba(116, 128, 128, 0.257), rgba(116, 128, 128, 0.257)), url('images/white\ apt\ buildings.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.103);
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.2);
   }
+
+  .border {
+    width: 60%;
+    margin: 0 auto;
+    height: 47px;
+    border: 3px solid #eec028;
+    border-bottom: 0;
+  }
+
+  .border-bottom {
+    border-top: 0;
+    border-bottom: 3px solid #eec028;
+  }
+}
 
   /* headline */
   #headline {
