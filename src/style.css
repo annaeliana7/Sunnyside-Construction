@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Change the color of the scrollbar
+For Webkit browsers (Safari, Chrome, etc.) */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #eec028a5;
+  border-radius: 10px;
+}
+
 :root {
   --yellow-color: #eec128;
   --light-yellow: #eec028;
@@ -11,16 +35,7 @@
   --grey-tone-color: #adadad;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato', sans-serif;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--white-color);
-}
+/* ******* Header Section ******* */
 
 /* header section  */
 #header {
@@ -43,7 +58,7 @@ body {
 .nav-mobile {
   width: 100%;
   height: 100vh;
-  background-color: #707070;
+  background-color: #707070cc;
   position: fixed;
   top: 0;
   left: 0;
@@ -95,11 +110,7 @@ body {
   padding-right: 100px;
 }
 
-/* ===============================*\
-        Transitions/Animations
-*\=============================== */
-
-/* Adds a hover effect to a link by animating a line that starts from the bottom center of the link and moves towards both the left and right edges */
+/* Transitions/Animation- Adds a hover effect animating a line */
 .bottom-nav a {
   position: relative;
   padding-bottom: 5px;
@@ -109,38 +120,32 @@ body {
 .bottom-nav a::after {
   content: '';
   width: 100%;
-  transform-origin: bottom; /* modify transform origin to start from right */
+  transform-origin: bottom;
   transform: scaleX(0);
   transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   background-color: #eec028;
   height: 3px;
   bottom: 1px;
-  right: 0; /* modify left to right */
+  right: 0;
   position: absolute;
 }
 
 .bottom-nav a:hover::before,
 .bottom-nav a:hover::after {
-  transform-origin: bottom left; /* modify transform origin to move to left */
+  transform-origin: bottom left;
   transform: scaleX(1);
 }
 
 .bottom-nav a:hover::after {
-  transition-delay: 0.2s; /* add delay to start animation after :before */
+  transition-delay: 0.2s;
 }
-
-/* end animations */
 
 .bottom-nav li a {
   color: var(--black-color);
   text-decoration: none;
 }
 
-/* ===============================*\
-        Transitions/Animations
-*\=============================== */
-
-/* transition- increase font size and change color on hover */
+/* Transitions/Animations- increase font size  */
 .bottom-nav a:hover {
   color: #707070;
   cursor: pointer;
@@ -154,8 +159,6 @@ body {
   font-size: 2em;
 }
 
-/* end animation */
-
 /* mobile menu hover */
 .nav-mobile ul li a:hover {
   color: white;
@@ -166,6 +169,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
+  padding-bottom: 15px;
 }
 
 .main-nav .icon-nav {
@@ -189,16 +193,17 @@ body {
   gap: 50px;
 }
 
+/* ******* Banner Section ******* */
+
 /* banner */
 .banner {
-  margin-top: 15px;
-  padding: 6em 0 8em 0;
+  padding: 3em 0 3em 0;
   text-align: center;
   width: 100%;
-  background-image: url(images/drawing-construction-mobile.jpg);
+  background-image: linear-gradient(rgba(116, 128, 128, 0.257), rgba(116, 128, 128, 0.257)), url('images/white\ apt\ buildings.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.103);
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.2);
 }
 
 .border {
@@ -214,10 +219,10 @@ body {
   font-size: 1.5em;
   color: #eec028;
   text-align: center;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  padding: 0.5em 0 0 0;
+  padding: 0.5em 5px 0 20px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -229,7 +234,7 @@ body {
   margin: 1em 0 0 0;
   line-height: 2em;
   letter-spacing: 2px;
-  padding: 0 0 2em 0;
+  padding: 0 16px 0 16px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -238,15 +243,16 @@ body {
   border-bottom: 2px solid #eec028;
 }
 
+/* ******* Headline Section ******* */
+
 /* headline */
 #headline {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   width: 100%;
-  padding-top: 38px;
-  padding-bottom: 38px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.525), rgba(255, 255, 255, 0.5)), url('images/backdrop-headline.jpg');
+  padding-top: 16px;
+  padding-bottom: 28px;
 }
 
 .headline-content {
@@ -260,17 +266,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin: 0;
+  padding: 30px;
 }
 
 .headline-description {
-  padding: 16px;
-  border: 2px solid #eec028;
+  border: 2.5px solid #eec028;
   color: #273a33;
   text-align: center;
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 3px;
   font-size: 1rem;
-  margin-top: 25px;
+  padding: 25px;
 }
 
 .headline-description p {
@@ -284,8 +290,13 @@ body {
 }
 
 .build {
-  max-width: 100%;
+  width: 85%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 12px;
 }
+
+/* ******* Footer Section ******* */
 
 /* footer */
 #footer {
@@ -333,7 +344,8 @@ body {
 
   /* banner */
   .banner h2 {
-    font-size: 5em;
+    font-size: 5.5em;
+    font-weight: 300;
   }
 
   .banner p {
@@ -341,24 +353,49 @@ body {
   }
 
   .banner {
-    margin-top: 15px;
-    padding: 6em 0 8em 0;
+    padding: 5em 0 5em 0;
     text-align: center;
     width: 100%;
-    background-image: url(images/drawing-construction.jpg);
+    background-image: linear-gradient(rgba(116, 128, 128, 0.257), rgba(116, 128, 128, 0.257)), url('images/white\ apt\ buildings.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.103);
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.2);
+  }
+
+  .border {
+    width: 60%;
+    margin: 0 auto;
+    height: 47px;
+    border: 3px solid #eec028;
+    border-bottom: 0;
+  }
+
+  .border-bottom {
+    border-top: 0;
+    border-bottom: 3px solid #eec028;
   }
 
   /* headline */
   #headline {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 28px;
   }
 
   .headline-title {
     font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    grid-column: span 2;
+  }
+
+  .headline-description {
+    margin: 25px 25px 0 25px;
+    font-size: 1.3rem;
+  }
+
+  .headline-content {
+    margin-left: 116px;
   }
 
   /* transition- increase font size and change color on hover */
@@ -369,14 +406,10 @@ body {
     font-size: 3rem;
   }
 
-  .headline-description {
-    font-size: 1.3rem;
-  }
-
   .build {
     width: 100%;
     max-width: 700px;
-    border-radius: 5px;
+    border-radius: 3px;
     border: #eec028;
     cursor: pointer;
   }
