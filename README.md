@@ -69,7 +69,7 @@ This project was developed using a Kanban board approach. The Kanban board used 
 
 ## Project Demo Image
 <br>
-<img align="center" src="assets-README/project___demo777.png" alt="logo" width="100%"  height="auto" />
+<img align="center" src="assets-README/project___demo777.png" alt="project demo" width="100%"  height="auto" />
 
   <br/>
 
