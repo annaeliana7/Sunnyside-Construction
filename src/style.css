@@ -87,6 +87,11 @@ For Webkit browsers (Safari, Chrome, etc.) */
   object-fit: cover;
 }
 
+.card-icon img {
+  width: 66px;
+  filter: invert(90%) sepia(4%) saturate(6%) hue-rotate(316deg) brightness(77%) contrast(89%);
+}
+
 .main-nav .icon-nav img {
   height: 100%;
   object-fit: cover;
@@ -300,6 +305,72 @@ For Webkit browsers (Safari, Chrome, etc.) */
   padding-top: 12px;
 }
 
+/* ******* services section ******* */
+
+.services-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 59px;
+}
+
+.program-title {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.program-title h2 {
+  color: #333e3e;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.services-card {
+  background-color: rgba(60, 63, 70, 0.8);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  line-height: 1.4em;
+  font-size: 12px;
+}
+
+.border-header {
+  border: 3px solid #eec028;
+  width: 66px;
+  margin-top: 15px;
+}
+
+.card-icon {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  gap: 20px;
+  width: 40%;
+}
+
+.card-description {
+  width: 50%;
+}
+
+.services-card h3 {
+  white-space: normal;
+  word-break: break-word;
+  color: #eec028;
+}
+
+.card-description p {
+  color: #d3d3d3;
+  padding: 5px;
+}
+
 /* ******* Footer Section ******* */
 
 /* footer */
@@ -442,6 +513,37 @@ For Webkit browsers (Safari, Chrome, etc.) */
     transform: scale(1.05);
   }
 
+  /* services */
+  .services-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    width: 16%;
+    height: auto;
+    font-size: 15px;
+  }
+
+  .card-icon {
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+
+  .card-icon img {
+    width: 60px;
+  }
+
+  .card-description {
+    padding-top: 10px;
+    width: 100%;
+  }
+
   /* footer */
   #footer {
     display: flex;
@@ -467,7 +569,7 @@ For Webkit browsers (Safari, Chrome, etc.) */
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  padding-top: 57px;
+  margin-top: 28px;
 }
 
 .titlepage h2 {
