@@ -82,6 +82,12 @@ For Webkit browsers (Safari, Chrome, etc.) */
   object-fit: cover;
 }
 
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .main-nav .icon-nav img {
   height: 100%;
   object-fit: cover;
@@ -505,12 +511,6 @@ For Webkit browsers (Safari, Chrome, etc.) */
   margin: 0 10px;
   text-align: center;
   margin-bottom: 7px;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 /* carousel arrows */
