@@ -25,14 +25,13 @@ For Webkit browsers (Safari, Chrome, etc.) */
 :root {
   --yellow-color: #eec128;
   --light-yellow: #eec028;
-  --dark-yellow-color: #a69456;
-  --banana-yellow: #ffe599;
   --grey-color: #d3d3d3;
   --grey-white-color: #dad9d9;
   --white-color: #fff;
   --black-color: #273a33;
   --dark-grey-color: #707070;
   --grey-tone-color: #adadad;
+  --charcoal-gray-color: #404040;
 }
 
 /* ******* Header Section ******* */
@@ -529,6 +528,10 @@ For Webkit browsers (Safari, Chrome, etc.) */
   cursor: pointer;
   margin: 7px;
   padding-top: 19px;
+}
+
+.carousel-arrow:hover {
+  background-color: #404040;
 }
 
 /* read-more popup */
