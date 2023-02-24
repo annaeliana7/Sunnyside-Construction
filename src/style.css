@@ -320,7 +320,6 @@ For Webkit browsers (Safari, Chrome, etc.) */
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  padding-top: 57px;
 }
 
 .program-title h2 {
