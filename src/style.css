@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-:root {
-  --yellow-color: #eec128;
-  --light-yellow: #eec028;
-  --dark-yellow-color: #a69456;
-  --banana-yellow: #ffe599;
-  --grey-color: #d3d3d3;
-  --grey-white-color: #dad9d9;
-  --white-color: #fff;
-  --black-color: #273a33;
-  --dark-grey-color: #707070;
-  --grey-tone-color: #adadad;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -20,8 +7,8 @@
   scroll-behavior: smooth;
 }
 
-/* Change the color of the scrollbar 
-For Webkit browsers (Safari, Chrome, etc.)*/
+/* Change the color of the scrollbar
+For Webkit browsers (Safari, Chrome, etc.) */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -33,6 +20,19 @@ For Webkit browsers (Safari, Chrome, etc.)*/
 ::-webkit-scrollbar-thumb {
   background-color: #eec028a5;
   border-radius: 10px;
+}
+
+:root {
+  --yellow-color: #eec128;
+  --light-yellow: #eec028;
+  --dark-yellow-color: #a69456;
+  --banana-yellow: #ffe599;
+  --grey-color: #d3d3d3;
+  --grey-white-color: #dad9d9;
+  --white-color: #fff;
+  --black-color: #273a33;
+  --dark-grey-color: #707070;
+  --grey-tone-color: #adadad;
 }
 
 /* ******* Header Section ******* */
@@ -391,6 +391,7 @@ For Webkit browsers (Safari, Chrome, etc.)*/
 
   .headline-description {
     margin: 25px 25px 0 25px;
+    font-size: 1.3rem;
   }
 
   .headline-content {
@@ -403,10 +404,6 @@ For Webkit browsers (Safari, Chrome, etc.)*/
     cursor: pointer;
     transform: scale(1.05);
     font-size: 3rem;
-  }
-
-  .headline-description {
-    font-size: 1.3rem;
   }
 
   .build {
@@ -455,3 +452,4 @@ For Webkit browsers (Safari, Chrome, etc.)*/
       display: none;
     }
   }
+}
