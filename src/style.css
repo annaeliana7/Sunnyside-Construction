@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
 
 * {
   margin: 0;
@@ -684,7 +684,6 @@ For Webkit browsers (Safari, Chrome, etc.) */
   /* carousel */
   .carousel {
     width: 80%;
-    margin: 12px;
     position: relative;
 
     /* overflow-x: scroll; */
