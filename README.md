@@ -67,7 +67,7 @@ This project was developed using a Kanban board approach. The Kanban board used 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Project Demo Image
+## 📷 Project Demo Image
 <br>
 <img align="center" src="assets-README/project___demo777.png" alt="project demo" width="100%"  height="auto" />
 
